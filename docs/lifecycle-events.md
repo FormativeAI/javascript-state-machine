@@ -36,8 +36,8 @@ Multiple events can be observed using an observer object:
 
 ```javascript
   fsm.observe({
-    onStep: function() { console.log('stepped');         }
-    onA:    function() { console.log('entered state A'); }
+    onStep: function() { console.log('stepped');         },
+    onA:    function() { console.log('entered state A'); },
     onB:    function() { console.log('entered state B'); }
   });
 ```
@@ -51,8 +51,8 @@ A state machine always observes its own lifecycle events:
       { name: 'step', from: 'A', to: 'B' }
     ],
     methods: {
-      onStep: function() { console.log('stepped');         }
-      onA:    function() { console.log('entered state A'); }
+      onStep: function() { console.log('stepped');         },
+      onA:    function() { console.log('entered state A'); },
       onB:    function() { console.log('entered state B'); }
     }
   });
